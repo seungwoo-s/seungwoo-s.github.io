@@ -19,6 +19,7 @@
     .pub-meta  { font-size: 0.9rem; color: #555; }
     .pub-links { font-size: 0.9rem; }
     .pub + .pub { margin-top: 1.5rem; } /* 간격 조정 */
+    .badge-light { font-size: 0.8rem; color: #666; background-color: #f8f9fa; border: 1px solid #ddd; margin-top: 4px; }
 
     .section { margin-top: 2.5rem; font-weight: 600; border-bottom: 1px solid #eee; padding-bottom: 10px; margin-bottom: 15px;}
     
@@ -54,7 +55,7 @@
               |
               <a href="https://scholar.google.com/citations?user=37LYQu4AAAAJ&hl=en" target="_blank">Scholar</a>
               |
-              <a href="www.linkedin.com/in/seungwoo-son-057511323" target="_blank">LinkedIn</a>
+              <a href="https://www.linkedin.com/in/seungwoo-son-057511323" target="_blank">LinkedIn</a>
             </div>
           </div>
 
@@ -69,8 +70,9 @@
             </p>
 
             <p class="profile-text text-justify mb-0">
-              My research interests lie in <strong>Model Compression</strong> and <strong>LLM Quantization</strong> for efficient AI on edge devices. 
-              I have experience developing quantization methods that significantly reduce model size and latency while maintaining accuracy, enabling the deployment of Large Language Models on mobile environments like Galaxy devices.
+              My research interests lie in <strong>Model Compression</strong>, <strong>LLM Quantization</strong>, and <strong>On-device Personalization</strong>.
+              Recently, I have been exploring ways to internalize retrieval-augmented generation (e.g., <strong>GraphRAG</strong>) on edge devices for personalized AI experiences.
+              I have experience developing quantization methods that significantly reduce model size and latency while maintaining accuracy.
             </p>
           </div>
         </div>
@@ -78,59 +80,6 @@
         <div class="row" style="margin-top: 1em;">
           <div class="col-sm-12" style="padding: 0;">
             
-            <h4 class="section">Education</h4>
-            <ul class="experience-list">
-                <li>
-                    <strong>Pohang University of Science and Technology (POSTECH)</strong>
-                    <span class="date-badge">Mar. 2022 - Aug. 2024</span>
-                    <br>M.S. in Electrical Engineering
-                </li>
-                <li>
-                    <strong>Inha University</strong>
-                    <span class="date-badge">Mar. 2016 - Feb. 2022</span>
-                    <br>B.S. in Electronic Engineering (GPA: 4.33/4.5, Summa Cum Laude)
-                </li>
-            </ul>
-
-            <h4 class="mt-2 section">Publications</h4>
-
-            <div class="row pub">
-              <div class="col-sm-12 pub-text">
-                <div class="pub-title">TurboBoA: Faster and Exact Attention-aware Quantization without Backpropagation</div>
-                <div class="pub-meta">Junhan Kim, Yeo Jeong Park, <strong>Seungwoo Son</strong>, Chungman Lee, Ho-young Kim, Joonyoung Kim, Yongkweon Jeon &nbsp;|&nbsp; <span class="pub-venue">ICLR 2026</span> (Submitted)</div>
-                </div>
-            </div>
-
-            <div class="row pub">
-              <div class="col-sm-12 pub-text">
-                <div class="pub-title">On the Importance of a Multi-Scale Calibration for Quantization</div>
-                <div class="pub-meta"><strong>Seungwoo Son</strong>, Junhan Kim, Ingyu Seong, Hyemi Jang, Yongkweon Jeon &nbsp;|&nbsp; <span class="pub-venue">ICASSP 2026</span> (Submitted)</div>
-              </div> 
-            </div> 
-
-            <div class="row pub">
-              <div class="col-sm-12 pub-text">
-                <div class="pub-title">Two-Stage Grid Optimization for Group-wise Quantization of LLMs</div>
-                <div class="pub-meta">Junhan Kim, <strong>Seungwoo Son</strong>, Jeewook Kim, Gukryeol Lee, Yongkweon Jeon &nbsp;|&nbsp; <span class="pub-venue">ICASSP 2026</span> (Submitted)</div>
-              </div> 
-            </div> 
-
-            <div class="row pub">
-              <div class="col-sm-12 pub-text">
-                <div class="pub-title">Prefixing Attention Sinks can Mitigate Activation Outliers for Large Language Model Quantization</div>
-                <div class="pub-meta"><strong>Seungwoo Son</strong>, Wonpyo Park, Woohyun Han, Kyuyeun Kim, Jaeho Lee &nbsp;|&nbsp; <span class="pub-venue">EMNLP 2024</span></div>
-                <div class="pub-links">[<a href="#" target="_blank">Paper</a>]</div>
-              </div> 
-            </div> 
-
-            <div class="row pub">
-              <div class="col-sm-12 pub-text">
-                <div class="pub-title">The Role of Masking for Efficient Supervised Knowledge Distillation of Vision Transformers</div>
-                <div class="pub-meta"><strong>Seungwoo Son</strong>, Jegwang Ryu, Namhoon Lee, Jaeho Lee &nbsp;|&nbsp; <span class="pub-venue">ECCV 2024</span></div>
-                <div class="pub-links">[<a href="#" target="_blank">Paper</a>]</div>
-              </div> 
-            </div> 
-
             <h4 class="section">Work Experience</h4>
             <ul class="experience-list">
               <li>
@@ -149,6 +98,65 @@
                   <br><small class="text-muted">Researched neural network compression techniques (KD, Quantization).</small>
               </li>
             </ul>
+
+            <h4 class="section">Education</h4>
+            <ul class="experience-list">
+                <li>
+                    <strong>Pohang University of Science and Technology (POSTECH)</strong>
+                    <span class="date-badge">Mar. 2022 - Aug. 2024</span>
+                    <br>M.S. in Electrical Engineering
+                </li>
+                <li>
+                    <strong>Inha University</strong>
+                    <span class="date-badge">Mar. 2016 - Feb. 2022</span>
+                    <br>B.S. in Electronic Engineering (GPA: 4.4/4.5, Summa Cum Laude)
+                </li>
+            </ul>
+
+            <h4 class="mt-2 section">Publications</h4>
+
+            <div class="row pub">
+              <div class="col-sm-12 pub-text">
+                <div class="pub-title">TurboBoA: Faster and Exact Attention-aware Quantization without Backpropagation</div>
+                <div class="pub-meta">Junhan Kim, Yeo Jeong Park, <strong>Seungwoo Son</strong>, Chungman Lee, Ho-young Kim, Joonyoung Kim, Yongkweon Jeon &nbsp;|&nbsp; <span class="pub-venue">ICLR 2026</span> (Submitted)</div>
+                <div><span class="badge badge-light">Work done at Samsung Research</span></div>
+              </div>
+            </div>
+
+            <div class="row pub">
+              <div class="col-sm-12 pub-text">
+                <div class="pub-title">On the Importance of a Multi-Scale Calibration for Quantization</div>
+                <div class="pub-meta"><strong>Seungwoo Son</strong>, Junhan Kim, Ingyu Seong, Hyemi Jang, Yongkweon Jeon &nbsp;|&nbsp; <span class="pub-venue">ICASSP 2026</span> (Submitted)</div>
+                <div><span class="badge badge-light">Work done at Samsung Research</span></div>
+              </div> 
+            </div> 
+
+            <div class="row pub">
+              <div class="col-sm-12 pub-text">
+                <div class="pub-title">Two-Stage Grid Optimization for Group-wise Quantization of LLMs</div>
+                <div class="pub-meta">Junhan Kim, <strong>Seungwoo Son</strong>, Jeewook Kim, Gukryeol Lee, Yongkweon Jeon &nbsp;|&nbsp; <span class="pub-venue">ICASSP 2026</span> (Submitted)</div>
+                <div><span class="badge badge-light">Work done at Samsung Research</span></div>
+              </div> 
+            </div> 
+
+            <div class="row pub">
+              <div class="col-sm-12 pub-text">
+                <div class="pub-title">Prefixing Attention Sinks can Mitigate Activation Outliers for Large Language Model Quantization</div>
+                <div class="pub-meta"><strong>Seungwoo Son</strong>, Wonpyo Park, Woohyun Han, Kyuyeun Kim, Jaeho Lee &nbsp;|&nbsp; <span class="pub-venue">EMNLP 2024</span></div>
+                <div class="pub-links">
+                  [<a href="https://aclanthology.org/2024.emnlp-main.134/" target="_blank">Paper</a>]
+                  <span class="badge badge-light ml-1">Work done at Google</span>
+                </div>
+              </div> 
+            </div> 
+
+            <div class="row pub">
+              <div class="col-sm-12 pub-text">
+                <div class="pub-title">The Role of Masking for Efficient Supervised Knowledge Distillation of Vision Transformers</div>
+                <div class="pub-meta"><strong>Seungwoo Son</strong>, Jegwang Ryu, Namhoon Lee, Jaeho Lee &nbsp;|&nbsp; <span class="pub-venue">ECCV 2024</span></div>
+                <div class="pub-links">[<a href="https://arxiv.org/abs/2302.10494" target="_blank">Paper</a>]</div>
+              </div> 
+            </div> 
 
             <h4 class="section">Honors & Awards</h4>
             <ul>
