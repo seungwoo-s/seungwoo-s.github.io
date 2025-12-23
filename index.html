@@ -19,8 +19,9 @@
     .pub-meta  { font-size: 0.9rem; color: #555; }
     .pub-desc  { font-size: 0.95rem; color: #444; margin-top: 6px; line-height: 1.5; font-weight: 400; }
     .pub-links { font-size: 0.9rem; margin-top: 4px; }
-    .pub + .pub { margin-top: 1.8rem; } /* 설명이 추가되어 간격을 조금 더 넓힘 */
+    .pub + .pub { margin-top: 1.8rem; } 
     .badge-light { font-size: 0.8rem; color: #666; background-color: #f8f9fa; border: 1px solid #ddd; margin-top: 4px; }
+    .badge-warning { font-size: 0.8rem; margin-top: 4px; } /* Best Paper 배지용 */
 
     .section { margin-top: 2.5rem; font-weight: 600; border-bottom: 1px solid #eee; padding-bottom: 10px; margin-bottom: 15px;}
     
@@ -71,7 +72,7 @@
 
             <p class="profile-text text-justify mb-0">
               My research interests lie in <strong>Model Compression</strong> and <strong>On-device Personalization</strong>.
-              Recently, I have been exploring ways to internalize retrieval augmented generation (e.g., GraphRAG) on edge devices for personalized AI.
+              Recently, I have been exploring ways to internalize retrieval augmented generation (e.g., <strong>GraphRAG</strong>) on edge devices for personalized AI.
               I have experience developing quantization methods that significantly reduce model size and latency while maintaining accuracy.
             </p>
           </div>
@@ -109,7 +110,7 @@
                 <li>
                     <strong>Inha University</strong>
                     <span class="date-badge">Mar. 2016 - Feb. 2022</span>
-                    <br>B.S. in Electronic Engineering (Total GPA: 4.33/4.5, Major GPA: 4.4/4.5, Summa Cum Laude)
+                    <br>B.S. in Electronic Engineering (Major GPA: 4.4/4.5, Summa Cum Laude)
                 </li>
             </ul>
 
@@ -120,7 +121,7 @@
                 <div class="pub-title">TurboBoA: Faster and Exact Attention-aware Quantization without Backpropagation</div>
                 <div class="pub-meta">Junhan Kim, Yeo Jeong Park, <strong>Seungwoo Son</strong>, Chungman Lee, Ho-young Kim, Joonyoung Kim, Yongkweon Jeon &nbsp;|&nbsp; <span class="pub-venue">ICLR 2026</span> (Submitted)</div>
                 <div class="pub-desc">
-                  Proposed a backpropagation free quantization algorithm that achieves 4x speedup over state of the art methods by jointly quantizing multiple out channels and correcting propagated distortions, delivering superior accuracy in low bit regimes.
+                  Proposed a backpropagation-free quantization algorithm that achieves 4x speedup over state-of-the-art methods by jointly quantizing multiple out channels and correcting propagated distortions, delivering superior accuracy in low-bit regimes.
                 </div>
                 <div><span class="badge badge-light">Work done at Samsung Research</span></div>
               </div>
@@ -131,7 +132,7 @@
                 <div class="pub-title">On the Importance of a Multi-Scale Calibration for Quantization</div>
                 <div class="pub-meta"><strong>Seungwoo Son</strong>, Junhan Kim, Ingyu Seong, Hyemi Jang, Yongkweon Jeon &nbsp;|&nbsp; <span class="pub-venue">ICASSP 2026</span> (Submitted)</div>
                 <div class="pub-desc">
-                  Introduced MaCa, a length aware calibration method that incorporates multi scale sequence length information into Hessian estimation to improve quantization accuracy for variable length inputs in LLMs.
+                  Introduced MaCa, a length-aware calibration method that incorporates multi-scale sequence length information into Hessian estimation to improve quantization accuracy for variable-length inputs in LLMs.
                 </div>
                 <div><span class="badge badge-light">Work done at Samsung Research</span></div>
               </div> 
@@ -142,7 +143,7 @@
                 <div class="pub-title">Two-Stage Grid Optimization for Group-wise Quantization of LLMs</div>
                 <div class="pub-meta">Junhan Kim, <strong>Seungwoo Son</strong>, Jeewook Kim, Gukryeol Lee, Yongkweon Jeon &nbsp;|&nbsp; <span class="pub-venue">ICASSP 2026</span> (Submitted)</div>
                 <div class="pub-desc">
-                  Developed a two stage optimization strategy for groupwise quantization that initializes group scales based on input statistics and refines them via closed form coordinate descent, minimizing layerwise reconstruction loss efficiently.
+                  Developed a two-stage optimization strategy for group-wise quantization that initializes group scales based on input statistics and refines them via closed-form coordinate descent, minimizing layer-wise reconstruction loss efficiently.
                 </div>
                 <div><span class="badge badge-light">Work done at Samsung Research</span></div>
               </div> 
@@ -165,13 +166,49 @@
             <div class="row pub">
               <div class="col-sm-12 pub-text">
                 <div class="pub-title">The Role of Masking for Efficient Supervised Knowledge Distillation of Vision Transformers</div>
-                <div class="pub-meta"><strong>Seungwoo Son</strong>, Jegwang Ryu, Namhoon Lee, Jaeho Lee &nbsp;|&nbsp; <span class="pub-venue">ECCV 2024</span></div>
-                <div class="pub-desc">
-                  Developed a cost efficient distillation framework for Vision Transformers by masking input tokens to the teacher.
+                <div class="pub-meta">
+                  <strong>Seungwoo Son</strong>, Jegwang Ryu, Namhoon Lee, Jaeho Lee &nbsp;|&nbsp; 
+                  <span class="pub-venue">ECCV 2024</span> / <span class="pub-venue">ICLR 2023 Workshop on Sparsity in Neural Networks</span>
                 </div>
-                <div class="pub-links">[<a href="https://arxiv.org/abs/2302.10494" target="_blank">Paper</a>], [<a href="https://github.com/effl-lab/MaskedKD" target="_blank">Code</a>]</div>
+                <div class="pub-desc">
+                  Developed a cost-efficient distillation framework for Vision Transformers by masking input tokens to the teacher.
+                </div>
+                <div class="pub-links">[<a href="https://arxiv.org/abs/2302.10494v1" target="_blank">Paper</a>] [<a href="https://github.com/effl-lab/MaskedKD" target="_blank">Code</a>]</div>
               </div> 
             </div> 
+
+            <div class="row pub">
+              <div class="col-sm-12 pub-text">
+                <div class="pub-title">DSP: Distill The Knowledge Only By A Subset of Patches</div>
+                <div class="pub-meta">
+                  <strong>Seungwoo Son</strong> et al. &nbsp;|&nbsp; 
+                  <span class="pub-venue">IPIU 2023</span> (Oral)
+                </div>
+                <div class="pub-desc">
+                  Investigated methodology to efficiently extract model knowledge using only a subset of image patches.
+                </div>
+                <div class="pub-links">
+                  [<a href="http://ipiu2023.ipiu.or.kr/?act=info.page&pcode=sub04" target="_blank">Link</a>]
+                  <span class="badge badge-warning ml-1"><i class="fas fa-trophy"></i> Best Paper Award</span>
+                </div>
+              </div> 
+            </div> 
+
+
+            <h4 class="section">Invited Talks</h4>
+            <ul class="experience-list">
+              <li>
+                <strong>Naver-Intel Joint Lab Workshop: Lightweighting for Hyperscale AI</strong>
+                <span class="date-badge">Jun. 2024</span>
+                <br>
+                <small class="text-muted"><a href="https://www.kiise.or.kr/conference/main/getContent.do?CC=KCC&CS=2024&PARENT_ID=011700&content_no=2013" target="_blank">Conference Info</a></small>
+              </li>
+            </ul>
+
+            <h4 class="section">Academic Services</h4>
+            <ul>
+              <li><strong>Reviewer:</strong> ACL 2026, EACL 2026, ACL 2025, EMNLP 2025</li>
+            </ul>
 
             <h4 class="section">Honors & Awards</h4>
             <ul>
