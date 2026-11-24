@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Seungwoo Son is a Senior Machine Learning Engineer at Qualcomm AI Research specializing in model compression and quantization for on-device LLMs.">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
@@ -27,7 +29,15 @@
     
     /* 리스트 스타일 조정 */
     ul.experience-list li { margin-bottom: 10px; }
+    .site-content { padding: 0; }
     .date-badge { float: right; font-size: 0.85rem; color: #666; font-weight: 400; }
+    @media (max-width: 767px) {
+      .date-badge { float: none; display: block; margin-top: 3px; }
+      .profile-text { padding-right: 0; text-align: left !important; }
+      .profile-heading { margin-top: 20px; }
+      .pub-text { padding-left: 0; }
+      .site-content { padding-left: 15px; padding-right: 15px; }
+    }
   </style>
 
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-CMSVGPC040"></script>
@@ -39,7 +49,7 @@
   </script>
 
   <title>Seungwoo Son</title>
-  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+  <link rel="icon" type="image/jpeg" href="assets/home/image/profile.jpg">
 </head>
 
 <body>
@@ -50,7 +60,7 @@
         <div class="row" style="margin-top: 4em;">
           <div class="col-md-4 d-flex justify-content-start flex-column" align="center">
             <div style="margin-bottom: 20px;">
-              <img src="./assets/home/image/profile.jpg" class="rounded-circle" width="200px" alt="Seungwoo Son" onerror="this.src='https://via.placeholder.com/200?text=Profile+Pic'">
+              <img src="./assets/home/image/profile.jpg" class="rounded-circle" width="200" alt="Seungwoo Son">
             </div> 
             <div>
               <a href="mailto:swson32@gmail.com" target="_blank"><i class="fas fa-envelope"></i> Email</a>
@@ -61,41 +71,41 @@
             </div>
           </div>
 
-          <div class="col-md-8">
+          <div class="col-md-8 profile-heading">
             <h3 style="margin: 0; font-weight: 600;">Seungwoo Son</h3>
             <small class="text-muted"> Senior Machine Learning Engineer @ Qualcomm AI Research </small>
 
             <p class="profile-text text-justify mt-3">
-              I am an <strong>Senior Machine Learning Engineer</strong> at <strong>Qualcomm AI Research</strong>. 
+              I am a <strong>Senior Machine Learning Engineer</strong> at <strong>Qualcomm AI Research</strong>.
               Previously, I worked as a Machine Learning Engineer at <strong>Samsung Research</strong> (AI System Team) and a Student Researcher Intern at <strong>Google</strong> (CoreML Team).
             </p>
 
             <p class="profile-text text-justify mb-0">
-              My research interests lie in <strong>Model Compression</strong> and <strong>On-Device Personalization</strong>.
-              Recently, I have been exploring ways to internalize retrieval augmented generation (e.g., GraphRAG) on edge devices for personalized AI.
-              I have experience developing quantization methods that significantly reduce model size and latency while maintaining accuracy.
+              My research interests lie in <strong>Model Compression</strong> and <strong>Quantization for On-Device LLMs</strong>.
+              I work on efficient AI deployment, from quantization research to benchmarking and validation on Snapdragon platforms.
             </p>
           </div>
         </div>
 
         <div class="row" style="margin-top: 1em;">
-          <div class="col-sm-12" style="padding: 0;">
+          <div class="col-sm-12 site-content">
             
             <h4 class="section">Work Experience</h4>
             <ul class="experience-list">
               <li>
                   <strong>Senior Machine Learning Engineer</strong>, Qualcomm AI Research
                   <span class="date-badge">Mar. 2026 - Present</span>
+                  <br><small class="text-muted">Benchmarking and validating quantized models for Snapdragon platforms used by global smartphone OEMs.</small>
               </li>
               <li>
                   <strong>Machine Learning Engineer</strong>, Samsung Research (AI System Team)
                   <span class="date-badge">Oct. 2024 - Mar. 2026</span>
-                  <br><small class="text-muted">Developing quantized models for Galaxy edge devices. Reduced model size by 75% and latency by 30%.</small>
+                  <br><small class="text-muted">Developed quantized models for Galaxy edge devices. Reduced model size by 75% and latency by 30%.</small>
               </li>
               <li>
                   <strong>Student Researcher Intern</strong>, Google (CoreML Team)
                   <span class="date-badge">Aug. 2023 - Jul. 2024</span>
-                  <br><small class="text-muted">Implemented advanced quantization methods for LLMs, achieving 50% improvement in zero-shot accuracy.</small>
+                  <br><small class="text-muted">Improved LLM zero-shot accuracy by 50% through quantization; first-author paper at EMNLP 2024.</small>
               </li>
               <li>
                   <strong>Graduate Research Assistant</strong>, POSTECH
@@ -122,7 +132,7 @@
 
             <div class="row pub">
               <div class="col-sm-12 pub-text">
-                <div class="pub-title">TurboBoA: Faster and Exact Attention Aware Quantization without Backpropagation</div>
+                <div class="pub-title">TurboBoA: Faster and Exact Attention-aware Quantization without Backpropagation</div>
                 <div class="pub-meta">Junhan Kim, Yeo Jeong Park, <strong>Seungwoo Son</strong>, Chungman Lee, Ho-young Kim, Joonyoung Kim, Yongkweon Jeon &nbsp;|&nbsp; <span class="pub-venue">ICLR 2026</span></div>
                 <div class="pub-desc">
                   Proposed a backpropagation free quantization algorithm that achieves 4x speedup over state of the art methods by jointly quantizing multiple out channels and correcting propagated distortions, delivering superior accuracy in low bit regimes.
@@ -137,12 +147,13 @@
             <div class="row pub">
               <div class="col-sm-12 pub-text">
                 <div class="pub-title">On the Importance of a Multiscale Calibration for Quantization</div>
-                <div class="pub-meta"><strong>Seungwoo Son</strong>, Junhan Kim, Ingyu Seong, Hyemi Jang, Yongkweon Jeon &nbsp;|&nbsp; <span class="pub-venue">ICASSP 2026</span></div>
+                <div class="pub-meta"><strong>Seungwoo Son</strong>, Junhan Kim, Ingyu Seong, Hyemi Jang, Yongkweon Jeon &nbsp;|&nbsp; <span class="pub-venue">ICASSP 2026 (Oral)</span></div>
                 <div class="pub-desc">
                   Introduced MaCa, a length aware calibration method that incorporates multiscale sequence length information into Hessian estimation to improve quantization accuracy for variable length inputs in LLMs.
                 </div>
                 <div class="pub-links">
                   [<a href="https://arxiv.org/abs/2602.07465" target="_blank">Paper</a>]
+                  [<a href="https://research.samsung.com/blog/On-the-Importance-of-a-Multi-Scale-Calibration-for-Quantization" target="_blank" rel="noopener noreferrer">Samsung Research Blog</a>]
                   <span class="badge badge-light ml-1">Work done at Samsung Research</span>
                 </div>
               </div> 
@@ -237,7 +248,7 @@
             <h4 class="section">Technical Skills</h4>
             <ul>
                 <li><strong>Languages:</strong> C/C++, Python</li>
-                <li><strong>Frameworks & Tools:</strong> PyTorch, Jax, Git, Overleaf</li>
+                <li><strong>Frameworks & Tools:</strong> PyTorch, Git, Overleaf</li>
             </ul>
 
           </div>
@@ -253,14 +264,5 @@
     </footer>
   </div>
 
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkv3YIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
 </body>
 </html>
